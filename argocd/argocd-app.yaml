@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: <GIT_REPO_URL_HER>
+    repoURL: https://github.com/eyupyayan/argocd.git
     targetRevision: master
-    path: k8s/base
+    path: argocd/argocd-app
   destination:
     server: https://kubernetes.default.svc
     namespace: lab
