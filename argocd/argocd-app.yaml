@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/eyupyayan/argocd.git
     targetRevision: master
-    path: argocd/
+    path: k8s/base
   destination:
     server: https://kubernetes.default.svc
     namespace: lab
@@ -18,5 +18,3 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-
-
